@@ -1,0 +1,16 @@
+def get_bhod_summary():
+    bhod_info = {
+        "Village": "Bhod",
+        "Taluka": "Gondal",
+        "District": "Rajkot",
+        "State": "Gujarat",
+        "Postal_Code": 360311,
+        "Nearby_Town": "Gondal (Approx 10-15km)"
+    }
+
+    print(f"--- Quick Fact Sheet: {bhod_info['Village']} ---")
+    for key, value in bhod_info.items():
+        print(f"{key:15}: {value}")
+
+if __name__ == "__main__":
+    get_bhod_summary()
