@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+
+struct VillageProfile {
+    std::string name = "Bhod";
+    std::string taluka = "Gondal";
+    std::string district = "Rajkot";
+    int pincode = 360311;
+    bool hasGramPanchayat = true;
+};
+
+int main() {
+    VillageProfile bhod;
+    
+    std::cout << "--- " << bhod.name << " Village Records ---" << std::endl;
+    std::cout << "Location: " << bhod.taluka << ", " << bhod.district << std::endl;
+    std::cout << "PIN:      " << bhod.pincode << std::endl;
+    std::cout << "Status:   " << (bhod.hasGramPanchayat ? "Active Panchayat" : "N/A") << std::endl;
+    
+    return 0;
+}
