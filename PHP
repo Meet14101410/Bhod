@@ -1,0 +1,16 @@
+<?php
+$bhod_data = [
+    "name" => "Bhod",
+    "taluka" => "Gondal",
+    "district" => "Rajkot",
+    "pincode" => 360311,
+    "main_crops" => ["Groundnut", "Cotton", "Wheat"]
+];
+
+echo "<h2>Detailed Info: " . $bhod_data['name'] . " Village</h2>";
+echo "<ul>";
+echo "<li><strong>Taluka:</strong> " . $bhod_data['taluka'] . "</li>";
+echo "<li><strong>District:</strong> " . $bhod_data['district'] . "</li>";
+echo "<li><strong>Primary Crops:</strong> " . implode(", ", $bhod_data['main_crops']) . "</li>";
+echo "</ul>";
+?>
