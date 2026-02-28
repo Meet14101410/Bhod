@@ -1,0 +1,18 @@
+public class BhodVillage {
+    private String name = "Bhod";
+    private String taluka = "Gondal";
+    private String district = "Rajkot";
+
+    public void displayProfile() {
+        System.out.println("Displaying Profile for: " + name);
+        System.out.println("--------------------------------");
+        System.out.println("Administrative Taluka: " + taluka);
+        System.out.println("District Headquarters: " + district);
+        System.out.println("Region:                Saurashtra");
+    }
+
+    public static void main(String[] args) {
+        BhodVillage village = new BhodVillage();
+        village.displayProfile();
+    }
+}
